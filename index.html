@@ -1,1 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    
+</head>
+
+<body>
+    <div id="container" class="widthyo">
+        <header class="widthyo">
+            <img src="./img/blog logo copy.svg" alt="로고" a href="#" onclick="showPage('home')" />
+            <nav>
+                <ul>
+                    <li onclick="showPage('home')" data-page="home"> <a href="#">홈</a></li>
+                    <li a href="#" onclick="showPage('chuchu')" data-page="chuchu">추천</li>
+                    <li a href="#" onclick="showPage('people')" data-page="people">내 소식</li>
+                    <li a href="#" onclick="showPage('mything')" data-page="mything">글쓰기</li>
+                    <li a href="#" onclick="showPage('myblog')" data-page="myblog">내 블로그</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="home" class="page widthyo">
+            <img src="./img/home-title.png" alt="hometitle" class="home_title">
+            <img src="./img/blog-title-span-chung.png" alt="homtetilte_chung" class="home_title_chung">
+            <img src="./img/blog-title-span-ryang.png" alt="homtetilte_ryang" class="home_title_ryang">
+            <img src="./img/mainpagefirst.png" alt="배경파도 1" class="homeimgaeone" />
+            <img src="./img/mainpagesecond.png" alt="배경파도 2" class="homeimgaetwo" />
+            <img src="./img/mainpagethree.png" alt="배경파도 3" class="homeimgaethree" />
+            <img src="./img/mainpagefour.png" alt="배경파도 4" class="homeimgaefour" />
+            <img src="./img/mainpagefive.png" alt="배경파도 5" class="homeimgaefive" />
+            <img src="./img/mainpagesix.png" alt="배경파도 6" class="homeimgaesix" />
+        </div>
+        <div id="chuchu" class="page widthyo chuchu" style="display: none">
+            <div class="mainone">
+                <h2>강아지 산책 후기</h2>
+                <p>
+                    오늘은 집에서 뭐 할게 없어서, 강아지 산책을 다녀왔어요. 저희 강아지는 너무 열심히 달리는데, 제가
+                    지친 것 같네요.... 내일도 즐겁게 같이 산책가고 싶네요.
+                </p>
+                <img src="./img/20251109_155835.jpg" alt="강아지 산책" />
+                <div class="gonggam">
+                    <p>공감 24</p>
+                    <p>댓글 1</p>
+                </div>
+            </div>
+            <div class="mainone">
+                <h2>서울 여행 후기</h2>
+                <p>
+                    서울에 어렸을 때부터 가고 싶었는데, 드디어 처음으로 서울에 가게 되었어요. 정말 정말 생각보다
+                    서울은 큰 도시라는 생각이 드네요...!
+                </p>
+                <img src="./img/서울-여행-후기.jpg" alt="서울여행후기" />
+                <div class="gonggam">
+                    <p>공감 25</p>
+                    <p>댓글 12</p>
+                </div>
+            </div>
+            <div class="mainone">
+                <h2>광주에 다녀왔는데요</h2>
+                <p>
+                    제가 전남에 살아서 그나마 가까운 광주에 놀러갔다 왔는데요. 도시라서 그런지 차도 많고, 사람도
+                    많고 그러네요!!
+                </p>
+                <img src="./img/광주에다녀왔는데요.jpg" alt="광주에다녀왔는데요" />
+                <div class="gonggam">
+                    <p>공감 12</p>
+                    <p>댓글 0</p>
+                </div>
+            </div>
+            <div class="mainone">
+                <h2>이불 추천</h2>
+                <p>
+                    이불은 역시 '네모 이불' 여기 이불이 좋은 것 같네요!!! 이거 정말 따뜻하고 좋아요~!!! 정말 정말
+                    여러분께 추천 드려요~!!
+                </p>
+                <img src="./img/네모이불.jpg" alt="네모이불" />
+                <div class="gonggam">
+                    <p>공감 11</p>
+                    <p>댓글 222</p>
+                </div>
+            </div>
+            <div class="mainone">
+                <h2>청소기는 뭐가 좋을까??</h2>
+                <p>
+                    청소기 사야되는데,,, 뭐가 좋은지 잘 모르겠어요 ㅠㅠㅠ ㅇㅇㅇ 것이 좋다고 하는데,, 저는 잘
+                    모르겠네요 ㅠㅠㅠㅠ
+                </p>
+                <img src="./img/청소기.jpg" alt="청소기" />
+                <div class="gonggam">
+                    <p>공감 44</p>
+                    <p>댓글 10</p>
+                </div>
+            </div>
+            <div class="mainone">
+                <h2>알람 벨소리 추천</h2>
+                <p>
+                    요즘에 인기있는 헌트릭스의 golden 후렴 부분이 알람으로 쓰기 좋더라고요!! 이게 사람을 확실히
+                    깨우는 것 같아요~~~!!!
+                </p>
+                <img src="./img/알람.jpg" alt="알람" />
+                <div class="gonggam">
+                    <p>공감 0</p>
+                    <p>댓글 0</p>
+                </div>
+            </div>
+        </div>
+        <!--내 소식-->
+        <div id="people" class="page widthyo" style="display: none">
+            <ul>
+                <li>
+                    <a><img src="./img/outwindowgroom1.jpg" alt="김구름님" /></a>
+                    <p>김구름님이 서로이웃요청을 했습니다.</p>
+                </li>
+                <li>
+                    <a><img src="./img/outwindowgroom2.jpg" alt="김구름님" /></a>
+                    <p>김구름님이 게시물에 공감을 눌렀습니다.</p>
+                </li>
+                <li>
+                    <a><img src="./img/outwindowgroom3.jpg" alt="김구름님" /></a>
+                    <p>김구름님이 게시물에 댓글을 달았습니다.</p>
+                </li>
+            </ul>
+        </div>
+        <!--글쓰기-->
+        <div id="mything" class="page widthyo" style="display: none">
+            <form action="none" method="post">
+                <input class="mythingtitle" name="mythingtitle" type="text" placeholder="제목을 입력하세요." />
+                <textarea class="mythingproject" name="mythingproject" placeholder="내용을 입력하세요."></textarea>
+            </form>
+        </div>
+        <!--내 블로그-->
+        <div id="myblog" class="page widthyo" style="display: none">
+            <div class="myblog_imgdiv">
+                <img src="./img/myblog_img_big.jpg" alt="구름이" class="myblog_img" />
+            </div>
+            <div class="myblog_htwo">
+                <h2>구름이</h2>
+            </div>
+            <p>환영합니다. 구름이의 블로그에요. 구름이의 일상을 공유해 드릴게요.</p>
+            <div class="myblog_chuchu">
+                <div class="mainone">
+                    <h2>오늘은 산책 대모험!</h2>
+                    <p>
+                        아침부터 꼬리가 들썩! 바람 냄새 맡으며 산책을 나갔더니 새로운 친구도 만나고 간식도 얻었다. 완벽한 하루!
+                    </p>
+                    <img src="./img/20251109_155835.jpg" alt="구름이" />
+                    <div class="gonggam">
+                        <p>공감 24</p>
+                        <p>댓글 1</p>
+                    </div>
+                </div>
+                <div class="mainone">
+                    <h2>집사 무릎이 제일 좋아</h2>
+                    <p>
+                        집사가 소파에 앉자마자 냉큼 올라가 눕기 성공! 따뜻하고 폭신해서 잠이 스르르 와서 그대로 꿀잠 모드 돌입했다.
+                    </p>
+                    <img src="./img/20251109_155836.jpg" alt="구름이" />
+                    <div class="gonggam">
+                        <p>공감 25</p>
+                        <p>댓글 12</p>
+                    </div>
+                </div>
+                <div class="mainone">
+                    <h2>간식 사라진 사건</h2>
+                    <p>
+                        간식 봉지가 보이길래 살짝 냄새만 맡았는데… 어라? 벌써 없대! 억울하지만 꼬리 흔들면 또 줄 것 같다.
+                    </p>
+                    <img src="./img/20251109_163039.jpg" alt="구름이" />
+                    <div class="gonggam">
+                        <p>공감 12</p>
+                        <p>댓글 0</p>
+                    </div>
+                </div>
+                <div class="mainone">
+                    <h2>목욕한 날의 비극</h2>
+                    <p>
+                        산책 후 신나게 놀았더니 갑자기 목욕 타임… 물 싫어! 하지만 끝나고 나니 집사가 예쁘대서 기분이 좀 나아졌다.
+                    </p>
+                    <img src="./img/20251109_163040.jpg" alt="구름이" />
+                    <div class="gonggam">
+                        <p>공감 11</p>
+                        <p>댓글 222</p>
+                    </div>
+                </div>
+                <div class="mainone">
+                    <h2>오늘의 햇볕 명당 발견</h2>
+                    <p>
+                        창가에 따뜻한 햇살이 내려와서 드러누웠다. 눈 감고 있으면 세상이 평화롭다. 이것이 바로 강아지의 행복!
+                    </p>
+                    <img src="./img/20251109_163041.jpg" alt="구름이" />
+                    <div class="gonggam">
+                        <p>공감 44</p>
+                        <p>댓글 10</p>
+                    </div>
+                </div>
+                <div class="mainone">
+                    <h2>집사 따라다니기 프로젝트</h2>
+                    <p>
+                        오늘은 집사가 뭐 하는지 궁금해서 종일 졸졸 따라다녔다. 방 가면 따라가고 주방 가면 기다리고… 집사는 귀엽다며 머리 쓰담쓰담!
+                    </p>
+                    <img src="./img/20251109_163241.jpg" alt="구름이" />
+                    <div class="gonggam">
+                        <p>공감 0</p>
+                        <p>댓글 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="widthyo">
+            <p>copyright naver.blog</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+<!-- 
+기본 색상으로는 
+#78DDDA
+
+진한 색상으로는
+#6CC4BF
+-->
